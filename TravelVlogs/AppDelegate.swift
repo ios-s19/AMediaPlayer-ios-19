@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let feed = VideoFeedViewController()
     feed.videos = Video.allVideos()
     // feed.videos = Video.localVideos()
-    feed.title = "Videos"
+    feed.title = "Tony's Media Player"
     
     let nav = UINavigationController(rootViewController: feed)
     nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red,
-                                             NSAttributedStringKey.font: UIFont(name: "Roboto-Bold", size: 21)!]
+                                             NSAttributedStringKey.font: UIFont(name: "Roboto-Bold", size: 22)!]
     
 
     window?.rootViewController = nav

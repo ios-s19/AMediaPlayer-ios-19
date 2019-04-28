@@ -36,26 +36,40 @@ class Video: NSObject {
     }
     return videos
   }
-  
-  class func allVideos() -> [Video] {
-    var videos = localVideos()
-    // let videoURLString = "https://wolverine.raywenderlich.com/content/ios/tutorials/video_streaming/foxVillage.mp4"
+
+    class func radioStations() ->[Video] {
+ 
+        var videos: [Video] = []
+        let names = ["alternative", "jazz", "rock", "top-40", "dance"]
+        let titles = ["Alternative", "Jazz", "Rock", "Top-40", "Dance"]
+        let subtitles = ["Alternative Hits Radio Station",
+                         "Smooth Jazz Radio",
+                         "Rock-on Rock Music Radio",
+                         "Top-40 Pop Radio Station", "Club Dance Music"]
+        let urls = ["alternativeURL", "JazzURL", "RockURL", "Top-40URL", "DanceURL"]
+        
+        for (index, name) in names.enumerated() {
+            let videoURLString = urls[index]
+            let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
+            let thumbURL = URL(fileURLWithPath: thumbURLPath)
+            if let url = URL(string: videoURLString) {
+                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index] , subtitle: subtitles[index])
+                    videos.append(remoteVideo)
+                }
+        }
+        
+    return videos
+    }
+        
     
-    // This one serves a 10-second chunked video and makes loading faster than .mp4 videos
-     let videoURLString = "https://wolverine.raywenderlich.com/content/ios/tutorials/video_streaming/foxVillage.m3u8"
-    //let videoURLString = "https://www.youtube.com/embed/HkyVTxH2fIM"
-    
-    // Add one remote video
-    if let url = URL(string: videoURLString) {
-      let thumbURLPath = Bundle.main.path(forResource: "foxVillage", ofType: "png")!
-        // let thumbURLPath = Bundle.main.path(forResource: "t1", ofType: "png")!
-      let thumbURL = URL(fileURLWithPath: thumbURLPath)
-      
-      let remoteVideo = Video(url: url, thumbURL: thumbURL, title: "TomorrowLand 2018" , subtitle: "Live Today, Love Tomorrow, Unite Forever")
-      videos.append(remoteVideo)
+    class func allVideos() ->[Video] {
+        var videos1 = radioStations()
+        var videos2 = localVideos()
+        var videos = videos1 + videos2
+        return videos
     }
     
-    return videos
-  }
+    
+    
 }
 
