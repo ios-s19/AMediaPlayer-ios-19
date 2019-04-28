@@ -7,12 +7,14 @@ class Video: NSObject {
   let thumbURL: URL
   let title: String
   let subtitle: String
+  let playerType: String
 
-  init(url: URL, thumbURL: URL, title: String, subtitle: String) {
+    init(url: URL, thumbURL: URL, title: String, subtitle: String, playerType: String) {
     self.url = url
     self.thumbURL = thumbURL
     self.title = title
     self.subtitle = subtitle
+    self.playerType = playerType
     super.init()
   }
   
@@ -27,11 +29,13 @@ class Video: NSObject {
     
     for (index, name) in names.enumerated() {
       let urlPath = Bundle.main.path(forResource: name, ofType: "mp4")!
+      let playerType = "mp4"
       let url = URL(fileURLWithPath: urlPath)
       let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
       let thumbURL = URL(fileURLWithPath: thumbURLPath)
       
-      let video = Video(url: url, thumbURL: thumbURL, title: titles[index], subtitle: subtitles[index])
+        let video = Video(url: url, thumbURL: thumbURL, title: titles[index], subtitle: subtitles[index], playerType: playerType)
+        
       videos.append(video)
     }
     return videos
@@ -46,14 +50,15 @@ class Video: NSObject {
                          "Smooth Jazz Radio",
                          "Rock-on Rock Music Radio",
                          "Top-40 Pop Radio Station", "Club Dance Music"]
-        let urls = ["alternativeURL", "JazzURL", "RockURL", "Top-40URL", "DanceURL"]
+        let urls = ["https://vimeo.com/channels/music/174179940?autoplay=1", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us4.internet-radio.com:8266/listen.pls&t=.m3u", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk1.internet-radio.com:8036/listen.pls&t=.m3u", "Top-40URL", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk2.internet-radio.com:8024/listen.pls&t=.m3u"]
         
         for (index, name) in names.enumerated() {
             let videoURLString = urls[index]
+            let playerType = "m3u"
             let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
             let thumbURL = URL(fileURLWithPath: thumbURLPath)
             if let url = URL(string: videoURLString) {
-                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index] , subtitle: subtitles[index])
+                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index] , subtitle: subtitles[index], playerType: playerType)
                     videos.append(remoteVideo)
                 }
         }
@@ -63,9 +68,9 @@ class Video: NSObject {
         
     
     class func allVideos() ->[Video] {
-        var videos1 = radioStations()
-        var videos2 = localVideos()
-        var videos = videos1 + videos2
+        let videos1 = radioStations()
+        let videos2 = localVideos()
+        let videos = videos1 + videos2
         return videos
     }
     
