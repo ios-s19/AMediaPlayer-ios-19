@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let feed = VideoFeedViewController()
     feed.videos = Video.allVideos()
     // feed.videos = Video.localVideos()
-    feed.title = "Tony's Media Player"
+    feed.title = "Media Player"
     
     let nav = UINavigationController(rootViewController: feed)
     nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red,

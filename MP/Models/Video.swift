@@ -2,12 +2,16 @@
 
 import UIKit
 
+
+
+
 class Video: NSObject {
-  let url: URL
-  let thumbURL: URL
-  let title: String
-  let subtitle: String
-  let playerType: String
+    let url: URL
+    let thumbURL: URL
+    let title: String
+    let subtitle: String
+    let playerType: String
+    
 
     init(url: URL, thumbURL: URL, title: String, subtitle: String, playerType: String) {
     self.url = url
@@ -41,7 +45,7 @@ class Video: NSObject {
     return videos
   }
 
-    class func radioStations() ->[Video] {
+    class func videoStations() ->[Video] {
  
         var videos: [Video] = []
         let names = ["alternative", "jazz", "rock", "top-40", "dance"]
@@ -50,11 +54,11 @@ class Video: NSObject {
                          "Smooth Jazz Radio",
                          "Rock-on Rock Music Radio",
                          "Top-40 Pop Radio Station", "Club Dance Music"]
-        let urls = ["https://vimeo.com/channels/music/174179940?autoplay=1", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us4.internet-radio.com:8266/listen.pls&t=.m3u", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk1.internet-radio.com:8036/listen.pls&t=.m3u", "Top-40URL", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk2.internet-radio.com:8024/listen.pls&t=.m3u"]
+        let urls = ["https://www.youtube.com/embed/rTfGoa4p_EQ", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us4.internet-radio.com:8266/listen.pls&t=.m3u", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk1.internet-radio.com:8036/listen.pls&t=.m3u", "Top-40URL", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk2.internet-radio.com:8024/listen.pls&t=.m3u"]
         
         for (index, name) in names.enumerated() {
             let videoURLString = urls[index]
-            let playerType = "m3u"
+            let playerType = "youtube"
             let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
             let thumbURL = URL(fileURLWithPath: thumbURLPath)
             if let url = URL(string: videoURLString) {
@@ -68,7 +72,7 @@ class Video: NSObject {
         
     
     class func allVideos() ->[Video] {
-        let videos1 = radioStations()
+        let videos1 = videoStations()
         let videos2 = localVideos()
         let videos = videos1 + videos2
         return videos

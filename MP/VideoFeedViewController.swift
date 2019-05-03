@@ -50,18 +50,39 @@ extension VideoFeedViewController: UITableViewDelegate {
     
     // 2 from tutorial
     let videoURL = video.url
+    let playerType = video.playerType
+    
+    
+    if (playerType == "mp4") {
+        print ("mp4 video selected")
     let player = AVPlayer(url: videoURL)
     let playerViewController = AVPlayerViewController()
     playerViewController.player = player
     present(playerViewController, animated: true) {
-        
         player.play()
-    
+    }
     }
     
     
+    if (playerType == "youtube"){
+        print("Youtube selection pressed")
+            let player = AVPlayer(url: videoURL)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            present(playerViewController, animated: true) {
+                player.play()
+            }
+        
+    }
+    
+        
+    }
+    
+    
+    
+    
   }
-}
+
 
 extension VideoFeedViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

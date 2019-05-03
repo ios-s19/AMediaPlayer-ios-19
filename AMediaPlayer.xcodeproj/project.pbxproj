@@ -74,7 +74,7 @@
 		AE048669205A747E00BA6DBB /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		AE04866A205A747E00BA6DBB /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		AE04866B205A747E00BA6DBB /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
-		AE048679205A767600BA6DBB /* TravelVlogs-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelVlogs-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE048679205A767600BA6DBB /* MP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MP-Bridging-Header.h"; sourceTree = "<group>"; };
 		AE04867A205A767600BA6DBB /* UIFont+SystemFontOverride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+SystemFontOverride.h"; sourceTree = "<group>"; };
 		AE04867B205A767600BA6DBB /* UIFont+SystemFontOverride.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SystemFontOverride.m"; sourceTree = "<group>"; };
 		AE04869C205A845C00BA6DBB /* newYorkFlip-clip.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "newYorkFlip-clip.mp4"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 		AE95F5502043A7E400B27C3F = {
 			isa = PBXGroup;
 			children = (
-				AE95F55B2043A7E400B27C3F /* TravelVlogs */,
+				AE95F55B2043A7E400B27C3F /* MP */,
 				AE95F55A2043A7E400B27C3F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -192,7 +192,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE95F55B2043A7E400B27C3F /* TravelVlogs */ = {
+		AE95F55B2043A7E400B27C3F /* MP */ = {
 			isa = PBXGroup;
 			children = (
 				AE95F55C2043A7E400B27C3F /* AppDelegate.swift */,
@@ -202,9 +202,8 @@
 				AEA752FA20466B5C00F47A6C /* Models */,
 				AEA752F72046699B00F47A6C /* Views */,
 				AEA752FB20466C3F00F47A6C /* Resources */,
-				AE95F5742043AD2600B27C3F /* Local Videos */,
 			);
-			path = TravelVlogs;
+			path = MP;
 			sourceTree = "<group>";
 		};
 		AE95F5742043AD2600B27C3F /* Local Videos */ = {
@@ -241,10 +240,11 @@
 				AE04865E205A747E00BA6DBB /* Roboto */,
 				AEF6DBC720469DC7007F55DC /* LaunchScreen.xib */,
 				AE95F5632043A7E400B27C3F /* Assets.xcassets */,
+				AE95F5742043AD2600B27C3F /* Local Videos */,
 				AE95F5682043A7E400B27C3F /* Info.plist */,
 				AE04867A205A767600BA6DBB /* UIFont+SystemFontOverride.h */,
 				AE04867B205A767600BA6DBB /* UIFont+SystemFontOverride.m */,
-				AE048679205A767600BA6DBB /* TravelVlogs-Bridging-Header.h */,
+				AE048679205A767600BA6DBB /* MP-Bridging-Header.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -487,12 +487,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CRWT527YL;
-				INFOPLIST_FILE = TravelVlogs/Resources/Info.plist;
+				INFOPLIST_FILE = MP/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.aiello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TravelVlogs/Resources/TravelVlogs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MP/Resources/MP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -506,12 +506,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9CRWT527YL;
-				INFOPLIST_FILE = TravelVlogs/Resources/Info.plist;
+				INFOPLIST_FILE = MP/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.aiello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TravelVlogs/Resources/TravelVlogs-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MP/Resources/MP-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
