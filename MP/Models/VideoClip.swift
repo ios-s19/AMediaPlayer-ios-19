@@ -23,7 +23,7 @@ class VideoClip: NSObject {
     // Add HLS Stream to the beginning of clip show
     
     
-    let names = ["newYorkFlip-clip", "bulletTrain-clip", "monkey-clip", "shark-clip"]
+    let names = ["newYorkFlip-clip", "bulletTrain-clip", "monkey-clip", "shark-clip", "makebaclipiphone", "ragingclipiphone", "pagesclipiphone", "goliathclipiphone", "tomorrowclipiphone"]
     for name in names {
       let urlPath = Bundle.main.path(forResource: name, ofType: "mp4")!
       let url = URL(fileURLWithPath: urlPath)

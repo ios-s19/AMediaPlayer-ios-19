@@ -8,13 +8,10 @@
 
 import UIKit
 import AVKit
-import YoutubePlayer_in_WKWebView
 
 
 class VideoFeedViewController: UIViewController {
     
-    
-    @IBOutlet weak var ytp: WKYTPlayerView!
     
   var videos: [Video] = []
   

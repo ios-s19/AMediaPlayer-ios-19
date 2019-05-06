@@ -4,6 +4,23 @@
 //  Copyright © 2019 Tony Aiello. All rights reserved.
 //
 
+// I researched several tutorials, some very old, some new, some with Youtube
+// The base one I learned a lot from started with this tutorial
+// raywenderlich.com/5191-video-streaming-tutorial-for-ios-getting-started
+
+// other tutorials includes appcoda.com/youtube-api-ios-tutorial/  and
+// developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/MediaPlaybackGuide/Contents/Resources/en.lproj/GettingStarted/GettingStarted.html#//apple_ref/doc/uid/TP40016757-CH10-SW2
+
+
+// It should be noted a different viewer is required to embed YouTube videos
+//
+// Instead, I hosted my own remote videos on my server
+// and stream them under an https protocol
+//
+// Only the original tutorial travel blog videos are included in the local videos
+// folder.  Clips and artwork for the remote videos are included locally.
+//
+// 
 
 
 import UIKit

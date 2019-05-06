@@ -54,32 +54,6 @@ class Video: NSObject {
     return videos
   }
 
-    class func mp4Videos() ->[Video] {
- 
-        // original test template
-        var videos: [Video] = []
-        let names = ["alternative", "jazz", "rock", "top-40", "dance"]
-        let titles = ["Alternative", "Jazz", "Rock", "Top-40", "Dance"]
-        let subtitles = ["Alternative Hits Radio Station",
-                         "Smooth Jazz Radio",
-                         "Rock-on Rock Music Radio",
-                         "Top-40 Pop Radio Station", "Club Dance Music"]
-        let urls = ["https://djtonya.net/v/mv/bsa.mp4", "https://djtonya.net/v/mv/city.mp4",  "https://djtonya.net/v/mv/cod.mp4", "https://djtonya.net/v/mv/cool.mp4", "https://djtonya.net/v/mv/fly.mp4"]
-        
-        for (index, name) in names.enumerated() {
-            let videoURLString = urls[index]
-            let playerType = "mp4"
-     
-            let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
-            let thumbURL = URL(fileURLWithPath: thumbURLPath)
-            if let url = URL(string: videoURLString) {
-                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index], subtitle: subtitles[index], playerType: playerType)
-                    videos.append(remoteVideo)
-                }
-        }
-        
-    return videos
-    }
         
     class func playlistVideos() -> [Video] {
         let file = "https://djtonya.net/v/mv/dance.m3u"
@@ -130,12 +104,9 @@ class Video: NSObject {
     }
     
     class func allVideos() ->[Video] {
-//        let videos1 = videoStations()
-//        let videos2 = localVideos()
-        let videos = remoteVideos()
-        
-
-//        let videos = videos1 + videos2
+        let videos2 = localVideos()
+        let videos1 = remoteVideos()
+        let videos = videos1 + videos2
 //        let videos = playlistVideos()
         return videos
     }
