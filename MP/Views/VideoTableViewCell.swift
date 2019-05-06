@@ -43,7 +43,7 @@ class VideoTableViewCell: UITableViewCell {
   }
   
   // MARK - Obligatory Inits
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+  override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     
     addSubviews()
