@@ -1,3 +1,9 @@
+//  AMediaPlayer
+//
+//  Created by Tony Aiello on 5/4/19.
+//  Copyright © 2019 Tony Aiello. All rights reserved.
+//
+
 
 
 import UIKit

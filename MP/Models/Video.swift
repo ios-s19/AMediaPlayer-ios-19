@@ -1,7 +1,15 @@
+//  AMediaPlayer
+//
+//  Created by Tony Aiello on 5/4/19.
+//  Copyright © 2019 Tony Aiello. All rights reserved.
+//
+
+
+
+
 
 
 import UIKit
-
 
 
 
@@ -48,6 +56,7 @@ class Video: NSObject {
 
     class func mp4Videos() ->[Video] {
  
+        // original test template
         var videos: [Video] = []
         let names = ["alternative", "jazz", "rock", "top-40", "dance"]
         let titles = ["Alternative", "Jazz", "Rock", "Top-40", "Dance"]
@@ -76,6 +85,8 @@ class Video: NSObject {
         let file = "https://djtonya.net/v/mv/dance.m3u"
         let fileURL = URL(fileURLWithPath: file)
         
+        // This section will probably not be written
+        // So I am leaving this for future me to have fun with later
         //reading
         do {
             let text2 = try String(contentsOf: fileURL, encoding: .utf8)
@@ -84,15 +95,15 @@ class Video: NSObject {
         catch {/* error handling here */}
         
         
-            
-        let videos = testmp4()
+        // send something with an array of videos back - tmp placeholder
         
+        let videos = remoteVideos()
         return videos
     }
     
+
     
-    
-    class func testmp4() ->[Video] {
+    class func remoteVideos() ->[Video] {
         
         var videos: [Video] = []
         let names = ["madonna", "blue", "tomorrowland", "pages", "city", "makeba", "cola", "offshore", "batman", "goliath", "raging", "superman"]
@@ -121,8 +132,9 @@ class Video: NSObject {
     class func allVideos() ->[Video] {
 //        let videos1 = videoStations()
 //        let videos2 = localVideos()
-        let videos = testmp4()
-//        let videos = tonya
+        let videos = remoteVideos()
+        
+
 //        let videos = videos1 + videos2
 //        let videos = playlistVideos()
         return videos

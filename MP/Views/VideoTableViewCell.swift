@@ -1,4 +1,10 @@
+//  AMediaPlayer
+//
+//  Created by Tony Aiello on 5/4/19.
+//  Copyright © 2019 Tony Aiello. All rights reserved.
+//
 
+// This is the Table view cells class
 
 import UIKit
 
