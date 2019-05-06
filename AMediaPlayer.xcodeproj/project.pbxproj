@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		698D4561227E8F7B00E2188D /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D4560227E8F7B00E2188D /* YouTubeViewController.swift */; };
+		69954332227FB6E500B520DF /* city.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954322227FB6E400B520DF /* city.png */; };
+		69954333227FB6E500B520DF /* t3.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954323227FB6E400B520DF /* t3.png */; };
+		69954334227FB6E500B520DF /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954324227FB6E400B520DF /* batman.png */; };
+		69954335227FB6E500B520DF /* superman.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954325227FB6E400B520DF /* superman.png */; };
+		69954336227FB6E500B520DF /* makeba.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954326227FB6E400B520DF /* makeba.png */; };
+		69954337227FB6E500B520DF /* offshore.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954327227FB6E400B520DF /* offshore.png */; };
+		69954338227FB6E500B520DF /* raging.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954328227FB6E400B520DF /* raging.png */; };
+		69954339227FB6E500B520DF /* tomorrow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954329227FB6E400B520DF /* tomorrow2.png */; };
+		6995433A227FB6E500B520DF /* pages.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995432A227FB6E400B520DF /* pages.png */; };
+		6995433B227FB6E500B520DF /* t2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995432B227FB6E400B520DF /* t2.png */; };
+		6995433C227FB6E500B520DF /* t1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995432C227FB6E400B520DF /* t1.png */; };
+		6995433D227FB6E500B520DF /* tomorrowland.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995432D227FB6E500B520DF /* tomorrowland.png */; };
+		6995433E227FB6E500B520DF /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995432E227FB6E500B520DF /* blue.png */; };
+		6995433F227FB6E500B520DF /* madonna.png in Resources */ = {isa = PBXBuildFile; fileRef = 6995432F227FB6E500B520DF /* madonna.png */; };
+		69954340227FB6E500B520DF /* cola.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954330227FB6E500B520DF /* cola.png */; };
+		69954341227FB6E500B520DF /* goliath.png in Resources */ = {isa = PBXBuildFile; fileRef = 69954331227FB6E500B520DF /* goliath.png */; };
 		69A3997122755F1F002D0B4E /* club.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3997022755F1F002D0B4E /* club.png */; };
 		69A3997622755F2C002D0B4E /* dance.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3997222755F2C002D0B4E /* dance.png */; };
 		69A3997722755F2C002D0B4E /* jazz.png in Resources */ = {isa = PBXBuildFile; fileRef = 69A3997322755F2C002D0B4E /* jazz.png */; };
@@ -51,9 +68,28 @@
 		AEA752FD20466E8300F47A6C /* VideoLooperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA752FC20466E8300F47A6C /* VideoLooperView.swift */; };
 		AEA752FF204676E600F47A6C /* VideoClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA752FE204676E600F47A6C /* VideoClip.swift */; };
 		AEF6DBC820469DC7007F55DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEF6DBC720469DC7007F55DC /* LaunchScreen.xib */; };
+		D9C03BAD4159445323092F2A /* Pods_AMediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49354C7EBD3AE82F1FB59B16 /* Pods_AMediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49354C7EBD3AE82F1FB59B16 /* Pods_AMediaPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMediaPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		698D4560227E8F7B00E2188D /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
+		69954322227FB6E400B520DF /* city.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = city.png; sourceTree = "<group>"; };
+		69954323227FB6E400B520DF /* t3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t3.png; sourceTree = "<group>"; };
+		69954324227FB6E400B520DF /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
+		69954325227FB6E400B520DF /* superman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = superman.png; sourceTree = "<group>"; };
+		69954326227FB6E400B520DF /* makeba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = makeba.png; sourceTree = "<group>"; };
+		69954327227FB6E400B520DF /* offshore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offshore.png; sourceTree = "<group>"; };
+		69954328227FB6E400B520DF /* raging.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = raging.png; sourceTree = "<group>"; };
+		69954329227FB6E400B520DF /* tomorrow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomorrow2.png; sourceTree = "<group>"; };
+		6995432A227FB6E400B520DF /* pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pages.png; sourceTree = "<group>"; };
+		6995432B227FB6E400B520DF /* t2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t2.png; sourceTree = "<group>"; };
+		6995432C227FB6E400B520DF /* t1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = t1.png; path = ../../../../../new/t1.png; sourceTree = "<group>"; };
+		6995432D227FB6E500B520DF /* tomorrowland.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomorrowland.png; sourceTree = "<group>"; };
+		6995432E227FB6E500B520DF /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		6995432F227FB6E500B520DF /* madonna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = madonna.png; sourceTree = "<group>"; };
+		69954330227FB6E500B520DF /* cola.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cola.png; sourceTree = "<group>"; };
+		69954331227FB6E500B520DF /* goliath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goliath.png; sourceTree = "<group>"; };
 		69A3997022755F1F002D0B4E /* club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = club.png; sourceTree = "<group>"; };
 		69A3997222755F2C002D0B4E /* dance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dance.png; sourceTree = "<group>"; };
 		69A3997322755F2C002D0B4E /* jazz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jazz.png; sourceTree = "<group>"; };
@@ -61,6 +97,7 @@
 		69A3997522755F2C002D0B4E /* top-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top-40.png"; sourceTree = "<group>"; };
 		69A3997A22756023002D0B4E /* alternative.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alternative.png; sourceTree = "<group>"; };
 		69D808F02271651700544EAF /* t1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t1.png; sourceTree = "<group>"; };
+		A20418D010B1E3B17D365A1E /* Pods-AMediaPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMediaPlayer.release.xcconfig"; path = "Target Support Files/Pods-AMediaPlayer/Pods-AMediaPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		AE04865F205A747E00BA6DBB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		AE048660205A747E00BA6DBB /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		AE048661205A747E00BA6DBB /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -102,6 +139,7 @@
 		AEA752FC20466E8300F47A6C /* VideoLooperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLooperView.swift; sourceTree = "<group>"; };
 		AEA752FE204676E600F47A6C /* VideoClip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoClip.swift; sourceTree = "<group>"; };
 		AEF6DBC720469DC7007F55DC /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		BD77ADEB8A55FBD4AB802CF1 /* Pods-AMediaPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMediaPlayer.debug.xcconfig"; path = "Target Support Files/Pods-AMediaPlayer/Pods-AMediaPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,12 +147,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C03BAD4159445323092F2A /* Pods_AMediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A5AEEF22AEFB8DA6EEC22F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD77ADEB8A55FBD4AB802CF1 /* Pods-AMediaPlayer.debug.xcconfig */,
+				A20418D010B1E3B17D365A1E /* Pods-AMediaPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE04865E205A747E00BA6DBB /* Roboto */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +210,22 @@
 			children = (
 				AE0486CB205A9D7D00BA6DBB /* foxVillage.png */,
 				69A3997022755F1F002D0B4E /* club.png */,
+				69954324227FB6E400B520DF /* batman.png */,
+				6995432E227FB6E500B520DF /* blue.png */,
+				69954322227FB6E400B520DF /* city.png */,
+				69954330227FB6E500B520DF /* cola.png */,
+				69954331227FB6E500B520DF /* goliath.png */,
+				6995432F227FB6E500B520DF /* madonna.png */,
+				69954326227FB6E400B520DF /* makeba.png */,
+				69954327227FB6E400B520DF /* offshore.png */,
+				6995432A227FB6E400B520DF /* pages.png */,
+				69954328227FB6E400B520DF /* raging.png */,
+				69954325227FB6E400B520DF /* superman.png */,
+				6995432C227FB6E400B520DF /* t1.png */,
+				6995432B227FB6E400B520DF /* t2.png */,
+				69954323227FB6E400B520DF /* t3.png */,
+				69954329227FB6E400B520DF /* tomorrow2.png */,
+				6995432D227FB6E500B520DF /* tomorrowland.png */,
 				69A3997222755F2C002D0B4E /* dance.png */,
 				69A3997A22756023002D0B4E /* alternative.png */,
 				69A3997322755F2C002D0B4E /* jazz.png */,
@@ -181,6 +245,8 @@
 			children = (
 				AE95F55B2043A7E400B27C3F /* MP */,
 				AE95F55A2043A7E400B27C3F /* Products */,
+				17A5AEEF22AEFB8DA6EEC22F /* Pods */,
+				E6ED57FE7E4CA8D42A9139DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +263,7 @@
 			children = (
 				AE95F55C2043A7E400B27C3F /* AppDelegate.swift */,
 				AE95F56E2043A99600B27C3F /* VideoFeedViewController.swift */,
+				698D4560227E8F7B00E2188D /* YouTubeViewController.swift */,
 				AEA752FC20466E8300F47A6C /* VideoLooperView.swift */,
 				AE84707C20467A10004BE990 /* VideoPlayerView.swift */,
 				AEA752FA20466B5C00F47A6C /* Models */,
@@ -249,6 +316,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E6ED57FE7E4CA8D42A9139DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49354C7EBD3AE82F1FB59B16 /* Pods_AMediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE95F56B2043A7E400B27C3F /* Build configuration list for PBXNativeTarget "AMediaPlayer" */;
 			buildPhases = (
+				5C827388D5266B22B6497840 /* [CP] Check Pods Manifest.lock */,
 				AE95F5552043A7E400B27C3F /* Sources */,
 				AE95F5562043A7E400B27C3F /* Frameworks */,
 				AE95F5572043A7E400B27C3F /* Resources */,
+				3FB84FA7B3A7FF96F2512E71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -277,7 +354,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = "Modified By Tony Aiello";
+				ORGANIZATIONNAME = "Tony Aiello";
 				TargetAttributes = {
 					AE95F5582043A7E400B27C3F = {
 						CreatedOnToolsVersion = 9.2;
@@ -313,41 +390,102 @@
 				69A3997922755F2C002D0B4E /* top-40.png in Resources */,
 				AE0486B4205A845C00BA6DBB /* newYorkFlip.mp4 in Resources */,
 				AE04866F205A747E00BA6DBB /* Roboto-MediumItalic.ttf in Resources */,
+				6995433D227FB6E500B520DF /* tomorrowland.png in Resources */,
 				AE0486AC205A845C00BA6DBB /* bulletTrain-clip.mp4 in Resources */,
+				69954340227FB6E500B520DF /* cola.png in Resources */,
 				AE048676205A747E00BA6DBB /* Roboto-Bold.ttf in Resources */,
+				69954336227FB6E500B520DF /* makeba.png in Resources */,
 				AE0486C8205A8C3B00BA6DBB /* newYorkFlip.png in Resources */,
 				AE0486AB205A845C00BA6DBB /* newYorkFlip-clip.mp4 in Resources */,
 				AE95F5642043A7E400B27C3F /* Assets.xcassets in Resources */,
+				6995433B227FB6E500B520DF /* t2.png in Resources */,
+				69954337227FB6E500B520DF /* offshore.png in Resources */,
+				6995433C227FB6E500B520DF /* t1.png in Resources */,
 				AE048677205A747E00BA6DBB /* Roboto-Thin.ttf in Resources */,
 				AE048674205A747E00BA6DBB /* LICENSE.txt in Resources */,
 				AE048678205A747E00BA6DBB /* Roboto-Black.ttf in Resources */,
 				69A3997122755F1F002D0B4E /* club.png in Resources */,
 				69A3997622755F2C002D0B4E /* dance.png in Resources */,
+				69954335227FB6E500B520DF /* superman.png in Resources */,
 				AE0486B3205A845C00BA6DBB /* monkey.mp4 in Resources */,
 				AE048673205A747E00BA6DBB /* Roboto-Italic.ttf in Resources */,
 				AE048675205A747E00BA6DBB /* Roboto-BlackItalic.ttf in Resources */,
 				AE0486B5205A845C00BA6DBB /* bulletTrain.mp4 in Resources */,
 				AE0486C0205A87FD00BA6DBB /* shark.png in Resources */,
 				AE0486B7205A845C00BA6DBB /* shark.mp4 in Resources */,
+				6995433F227FB6E500B520DF /* madonna.png in Resources */,
+				69954332227FB6E500B520DF /* city.png in Resources */,
 				AE0486BA205A868B00BA6DBB /* bulletTrain.png in Resources */,
 				69A3997822755F2C002D0B4E /* rock.png in Resources */,
 				AE0486C1205A87FD00BA6DBB /* monkey.png in Resources */,
 				AE04866E205A747E00BA6DBB /* Roboto-Regular.ttf in Resources */,
 				AE04866C205A747E00BA6DBB /* Roboto-Medium.ttf in Resources */,
+				69954338227FB6E500B520DF /* raging.png in Resources */,
 				AE04866D205A747E00BA6DBB /* Roboto-Light.ttf in Resources */,
 				69A3997B22756023002D0B4E /* alternative.png in Resources */,
+				6995433E227FB6E500B520DF /* blue.png in Resources */,
 				AE0486CC205A9D7D00BA6DBB /* foxVillage.png in Resources */,
 				AE0486AE205A845C00BA6DBB /* monkey-clip.mp4 in Resources */,
 				69A3997722755F2C002D0B4E /* jazz.png in Resources */,
 				69D808F12271651700544EAF /* t1.png in Resources */,
+				6995433A227FB6E500B520DF /* pages.png in Resources */,
 				AE048670205A747E00BA6DBB /* Roboto-ThinItalic.ttf in Resources */,
+				69954339227FB6E500B520DF /* tomorrow2.png in Resources */,
+				69954341227FB6E500B520DF /* goliath.png in Resources */,
+				69954333227FB6E500B520DF /* t3.png in Resources */,
 				AE048672205A747E00BA6DBB /* Roboto-LightItalic.ttf in Resources */,
 				AE0486B0205A845C00BA6DBB /* shark-clip.mp4 in Resources */,
+				69954334227FB6E500B520DF /* batman.png in Resources */,
 				AEF6DBC820469DC7007F55DC /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FB84FA7B3A7FF96F2512E71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AMediaPlayer/Pods-AMediaPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YoutubePlayer-in-WKWebView/YoutubePlayer_in_WKWebView.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YoutubePlayer_in_WKWebView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMediaPlayer/Pods-AMediaPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C827388D5266B22B6497840 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AMediaPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE95F5552043A7E400B27C3F /* Sources */ = {
@@ -356,6 +494,7 @@
 			files = (
 				AE95F5712043AA2B00B27C3F /* VideoTableViewCell.swift in Sources */,
 				AE95F56F2043A99600B27C3F /* VideoFeedViewController.swift in Sources */,
+				698D4561227E8F7B00E2188D /* YouTubeViewController.swift in Sources */,
 				AE0486C6205A88EE00BA6DBB /* Video.swift in Sources */,
 				AE04867C205A767600BA6DBB /* UIFont+SystemFontOverride.m in Sources */,
 				AE95F55D2043A7E400B27C3F /* AppDelegate.swift in Sources */,
@@ -482,6 +621,7 @@
 		};
 		AE95F56C2043A7E400B27C3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD77ADEB8A55FBD4AB802CF1 /* Pods-AMediaPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -501,6 +641,7 @@
 		};
 		AE95F56D2043A7E400B27C3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20418D010B1E3B17D365A1E /* Pods-AMediaPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

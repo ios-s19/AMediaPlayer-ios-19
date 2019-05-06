@@ -11,7 +11,7 @@ class Video: NSObject {
     let title: String
     let subtitle: String
     let playerType: String
-    
+ 
 
     init(url: URL, thumbURL: URL, title: String, subtitle: String, playerType: String) {
     self.url = url
@@ -34,6 +34,7 @@ class Video: NSObject {
     for (index, name) in names.enumerated() {
       let urlPath = Bundle.main.path(forResource: name, ofType: "mp4")!
       let playerType = "mp4"
+
       let url = URL(fileURLWithPath: urlPath)
       let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
       let thumbURL = URL(fileURLWithPath: thumbURLPath)
@@ -45,7 +46,7 @@ class Video: NSObject {
     return videos
   }
 
-    class func videoStations() ->[Video] {
+    class func mp4Videos() ->[Video] {
  
         var videos: [Video] = []
         let names = ["alternative", "jazz", "rock", "top-40", "dance"]
@@ -54,15 +55,16 @@ class Video: NSObject {
                          "Smooth Jazz Radio",
                          "Rock-on Rock Music Radio",
                          "Top-40 Pop Radio Station", "Club Dance Music"]
-        let urls = ["https://www.youtube.com/embed/rTfGoa4p_EQ", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://us4.internet-radio.com:8266/listen.pls&t=.m3u", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk1.internet-radio.com:8036/listen.pls&t=.m3u", "Top-40URL", "https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk2.internet-radio.com:8024/listen.pls&t=.m3u"]
+        let urls = ["https://djtonya.net/v/mv/bsa.mp4", "https://djtonya.net/v/mv/city.mp4",  "https://djtonya.net/v/mv/cod.mp4", "https://djtonya.net/v/mv/cool.mp4", "https://djtonya.net/v/mv/fly.mp4"]
         
         for (index, name) in names.enumerated() {
             let videoURLString = urls[index]
-            let playerType = "youtube"
+            let playerType = "mp4"
+     
             let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
             let thumbURL = URL(fileURLWithPath: thumbURLPath)
             if let url = URL(string: videoURLString) {
-                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index] , subtitle: subtitles[index], playerType: playerType)
+                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index], subtitle: subtitles[index], playerType: playerType)
                     videos.append(remoteVideo)
                 }
         }
@@ -70,11 +72,59 @@ class Video: NSObject {
     return videos
     }
         
+    class func playlistVideos() -> [Video] {
+        let file = "https://djtonya.net/v/mv/dance.m3u"
+        let fileURL = URL(fileURLWithPath: file)
+        
+        //reading
+        do {
+            let text2 = try String(contentsOf: fileURL, encoding: .utf8)
+            print(text2)
+        }
+        catch {/* error handling here */}
+        
+        
+            
+        let videos = testmp4()
+        
+        return videos
+    }
+    
+    
+    
+    class func testmp4() ->[Video] {
+        
+        var videos: [Video] = []
+        let names = ["madonna", "blue", "tomorrowland", "pages", "city", "makeba", "cola", "offshore"]
+        let titles = ["Madonna & Maluma", "Above & Beyond", "TomorrowLand", "ATB Feat Haliene", "Alesso & Dirty South", "Jain", "CamelPhat & Elderbrook", "Stereojackers"]
+        let subtitles = ["Medellin",
+                         "Blue Sky Action",
+                         "TomorrowLand After Movie",
+                         "Pages", "City of Dreams", "Makeba", "Cola", "Offshore"]
+        let urls = ["https://djtonya.net/v/mv/madonna.mp4", "https://djtonya.net/v/mv/blue.mp4",  "https://djtonya.net/v/mv/tomorrowland.mp4", "https://djtonya.net/v/mv/pages.mp4", "https://djtonya.net/v/mv/city.mp4", "https://djtonya.net/v/mv/makeba.mp4", "https://djtonya.net/v/mv/cola.mp4", "https://djtonya.net/v/mv/offshore.mp4"]
+        
+        for (index, name) in names.enumerated() {
+            let videoURLString = urls[index]
+            let playerType = "mp4"
+            
+            let thumbURLPath = Bundle.main.path(forResource: name, ofType: "png")!
+            let thumbURL = URL(fileURLWithPath: thumbURLPath)
+            if let url = URL(string: videoURLString) {
+                let remoteVideo = Video(url: url, thumbURL: thumbURL, title: titles[index], subtitle: subtitles[index], playerType: playerType)
+                videos.append(remoteVideo)
+            }
+        }
+        
+        return videos
+    }
     
     class func allVideos() ->[Video] {
-        let videos1 = videoStations()
-        let videos2 = localVideos()
-        let videos = videos1 + videos2
+//        let videos1 = videoStations()
+//        let videos2 = localVideos()
+        let videos = testmp4()
+//        let videos = tonya
+//        let videos = videos1 + videos2
+//        let videos = playlistVideos()
         return videos
     }
     

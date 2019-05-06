@@ -2,8 +2,14 @@
 
 import UIKit
 import AVKit
+import YoutubePlayer_in_WKWebView
+
 
 class VideoFeedViewController: UIViewController {
+    
+    
+    @IBOutlet weak var ytp: WKYTPlayerView!
+    
   var videos: [Video] = []
   
   let VideoCellReuseIdentifier = "VideoCell"
@@ -50,11 +56,12 @@ extension VideoFeedViewController: UITableViewDelegate {
     
     // 2 from tutorial
     let videoURL = video.url
+   
     let playerType = video.playerType
     
     
-    if (playerType == "mp4") {
-        print ("mp4 video selected")
+    if (playerType == "mp4" || playerType == "m3u") {
+        // print ("mp4 or m3u video selected")
     let player = AVPlayer(url: videoURL)
     let playerViewController = AVPlayerViewController()
     playerViewController.player = player
@@ -65,15 +72,8 @@ extension VideoFeedViewController: UITableViewDelegate {
     
     
     if (playerType == "youtube"){
-        print("Youtube selection pressed")
-            let player = AVPlayer(url: videoURL)
-            let playerViewController = AVPlayerViewController()
-            playerViewController.player = player
-            present(playerViewController, animated: true) {
-                player.play()
-            }
-        
-    }
+        print ("Youtube is Not Supported in this player")
+        }
     
         
     }

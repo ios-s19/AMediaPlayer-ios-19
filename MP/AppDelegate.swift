@@ -17,12 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     feed.title = "Media Player"
     
     let nav = UINavigationController(rootViewController: feed)
-    nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.red,
+    nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.blue,
                                              NSAttributedStringKey.font: UIFont(name: "Roboto-Bold", size: 22)!]
     
 
     window?.rootViewController = nav
     window?.makeKeyAndVisible()
+    
+    
     
     return true
   }
