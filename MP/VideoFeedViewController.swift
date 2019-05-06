@@ -12,7 +12,6 @@ import AVKit
 
 class VideoFeedViewController: UIViewController {
     
-    
   var videos: [Video] = []
   
   let VideoCellReuseIdentifier = "VideoCell"
@@ -21,18 +20,14 @@ class VideoFeedViewController: UIViewController {
   let videoPreviewLooper = VideoLooperView(clips: VideoClip.allClips())
   
   override func viewWillAppear(_ animated: Bool) {
-    
     super.viewWillAppear(animated)
-
     videoPreviewLooper.play()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
     
-
     super.viewWillDisappear(animated)
     videoPreviewLooper.pause()
-    
   }
 }
 
@@ -51,18 +46,10 @@ extension VideoFeedViewController: UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-    
-    // 1 from tutorial
 
     let video = videos[indexPath.row]
-    
-    // 2 from tutorial
     let videoURL = video.url
-   
     let playerType = video.playerType
-    
-    
     if (playerType == "mp4" || playerType == "m3u") {
         // print ("mp4 or m3u video selected")
     let player = AVPlayer(url: videoURL)

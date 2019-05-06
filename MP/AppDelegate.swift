@@ -37,18 +37,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let feed = VideoFeedViewController()
     feed.videos = Video.allVideos()
     // feed.videos = Video.localVideos()
-    feed.title = "Media Player"
+    feed.title = "Streaming Media Player"
     
     let nav = UINavigationController(rootViewController: feed)
-    nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.blue,
-                                             NSAttributedStringKey.font: UIFont(name: "Roboto-Bold", size: 22)!]
-    
+    nav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.blue, NSAttributedStringKey.font: UIFont(name: "Roboto-Bold", size: 22)!]
 
+    // Make this view the root view
+    // Everything is going to be done programmatically
+    
     window?.rootViewController = nav
     window?.makeKeyAndVisible()
-    
-    
-    
+
     return true
   }
 }
