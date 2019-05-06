@@ -95,13 +95,13 @@ class Video: NSObject {
     class func testmp4() ->[Video] {
         
         var videos: [Video] = []
-        let names = ["madonna", "blue", "tomorrowland", "pages", "city", "makeba", "cola", "offshore"]
-        let titles = ["Madonna & Maluma", "Above & Beyond", "TomorrowLand", "ATB Feat Haliene", "Alesso & Dirty South", "Jain", "CamelPhat & Elderbrook", "Stereojackers"]
+        let names = ["madonna", "blue", "tomorrowland", "pages", "city", "makeba", "cola", "offshore", "batman", "goliath", "raging", "superman"]
+        let titles = ["Madonna & Maluma", "Above & Beyond", "TomorrowLand", "ATB Feat Haliene", "Alesso & Dirty South", "Jain", "CamelPhat & Elderbrook", "Stereojackers", "Batman The Ride", "Goliath", "Raging Bull", "Superman Ultimate Flight"]
         let subtitles = ["Medellin",
                          "Blue Sky Action",
                          "TomorrowLand After Movie",
-                         "Pages", "City of Dreams", "Makeba", "Cola", "Offshore"]
-        let urls = ["https://djtonya.net/v/mv/madonna.mp4", "https://djtonya.net/v/mv/blue.mp4",  "https://djtonya.net/v/mv/tomorrowland.mp4", "https://djtonya.net/v/mv/pages.mp4", "https://djtonya.net/v/mv/city.mp4", "https://djtonya.net/v/mv/makeba.mp4", "https://djtonya.net/v/mv/cola.mp4", "https://djtonya.net/v/mv/offshore.mp4"]
+                         "Pages", "City of Dreams", "Makeba", "Cola", "Offshore", "Front Row", "Back Row", "Front Row", "Front Row"]
+        let urls = ["https://djtonya.net/v/mv/madonna.mp4", "https://djtonya.net/v/mv/blue.mp4",  "https://djtonya.net/v/mv/tomorrowland.mp4", "https://djtonya.net/v/mv/pages.mp4", "https://djtonya.net/v/mv/city.mp4", "https://djtonya.net/v/mv/makeba.mp4", "https://djtonya.net/v/mv/cola.mp4", "https://djtonya.net/v/mv/offshore.mp4", "https://djtonya.net/v/mv/rollercoasters/batman.mp4", "https://djtonya.net/v/mv/rollercoasters/goliath.mp4", "https://djtonya.net/v/mv/rollercoasters/raging.mp4", "https://djtonya.net/v/mv/rollercoasters/superman.mp4"]
         
         for (index, name) in names.enumerated() {
             let videoURLString = urls[index]
