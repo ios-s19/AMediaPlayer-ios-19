@@ -69,8 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let nav = UINavigationController(rootViewController: feed)
     nav.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue, NSAttributedString.Key.font: UIFont(name: "Roboto-Bold", size: 22)!]
 
-    // Make this view the root view
-    // Everything is going to be done programmatically
+
     
     window?.rootViewController = nav
     window?.makeKeyAndVisible()

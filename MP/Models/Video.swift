@@ -54,14 +54,18 @@ class Video: NSObject {
     return videos
   }
 
-        
     class func playlistVideos() -> [Video] {
         let file = "https://djtonya.net/v/mv/dance.m3u"
         let fileURL = URL(fileURLWithPath: file)
         
         // This section will probably not be written
         // So I am leaving this for future me to have fun with later
-        //reading
+        // reading.  AVPlayer does not work with .m3u
+        // so I need to use AVQueuePlayer and build from there
+        //
+        //
+        
+        
         do {
             let text2 = try String(contentsOf: fileURL, encoding: .utf8)
             print(text2)
